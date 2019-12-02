@@ -5,10 +5,11 @@ This tools is used to help anonymize comments from a utf-8 encoded .csv file.
 
 `Dr. Dolittle is a great veterinarian.   ->  Dr. <PERSON> is a great veterinarian.`
 
-There are NO guaranties that this tool will. It is NOT guaranty that:
+There are NO guaranties that this tool will. The script may produce the following error:
+
     - People name will all be replaced by the token `<PERSON>`.
         `Dr. Dolittle is a great veterinarian.   ->  Dr. Dolittle is a great veterinarian.`
-    - Some non-people part of the text will be replaced by the token `<PERSON>`.
+    - Some non-people part of the text will be NOT replaced by the token `<PERSON>`.
         `Dr. Dolittle is a great veterinarian.   ->  Dr. <PERSON> is a great <PERSON>.`
 
 Anti Virus
@@ -19,7 +20,7 @@ quarantined.
 
 The source code is available here:
 
-``
+`https://github.com/gbmarc1/ExploranceAnonymizer`
 
 OPERATING SYSTEM
 ================
@@ -37,12 +38,17 @@ prompted.
 
 PYTHON SCRIPT
 --------------
-`python __main__.py --file "your_comment_csv.csv"`
+
+    - Activate your virtual environment
+    - Run `python __main__.py --file "your_comment_csv.csv"`
 
 
 HOW TO BUILD FROM SOURCE
 ========================
-On windows, run `build.bat`
+On windows, 
+
+    - Activate your virtual environment
+    - Run `build.bat`
 
 
 
