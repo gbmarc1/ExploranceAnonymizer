@@ -1,0 +1,5 @@
+spacy
+PyInstaller
+pandas
+pypiwin32
+tqdm
